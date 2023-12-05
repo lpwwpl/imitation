@@ -1,0 +1,14 @@
+function int fibonacci(int n)
+    if (n==1) 
+        return 1
+    end
+    if (n==2)
+        return 1
+    end
+    return fibonacci(n-2) + fibonacci(n-1)//Recursion call
+end 
+
+main()
+    int res = fibonacci(5)
+    print(res)
+end
